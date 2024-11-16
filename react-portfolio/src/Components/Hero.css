@@ -1,0 +1,43 @@
+.hero-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    gap: 30px;
+    margin: 0 10%;
+}
+
+.content{
+    display: flex;
+    flex-basis: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.profile-img{
+    width: 20%;
+    flex-basis: 30%;
+    max-height: 20%;
+    border-radius: 50%;
+    margin: 20px 0;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 33px;
+    background: linear-gradient(90deg, rgb(221, 101, 101) 60%, rgba(136, 179, 239, 0.7) 140%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media screen and (max-width:830px){
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .content{
+        align-items: center;
+    }
+}
