@@ -1,0 +1,30 @@
+body{
+  margin: auto;
+  background-color: aliceblue;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.input-list{
+  display: flex;
+  justify-content: space-between;
+}
+.input-list .form-control{
+  margin: 50px 20px;
+}
+.input-list .btn{
+  margin: 50px 20px;
+}
+.task-list{
+  width: 70%;
+  margin-left: 30px;
+  
+}
+.list-group-item{
+  font-size: 25px;
+  font-weight: 500;
+}
+.list-group-item button{
+  float: right;
+}
