@@ -1,0 +1,36 @@
+[
+  {
+    "role": "Fullstack Development Intern",
+    "organisation": "Twinlearn",
+    "startDate": "Jun, 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Developed and maintained Fullstack web applications using React.js, Node.js, and MongoDB",
+      "Optimized performance and improved scalability by implementing efficient back-end solutions"
+    ],
+    "imageSrc": "/history/twilearn.jpg"
+  },
+  {
+    "role": "Web Development Intern",
+    "organisation": "Verzeo",
+    "startDate": "Jan, 2023",
+    "endDate": "May, 2023",
+    "experiences": [
+      "Built dynamic websites with HTML, CSS, and JavaScript",
+      "Collaborated with designers to improve user interface designs"
+    ],
+    "imageSrc": "/history/verzeo.jpg"
+  },
+  {
+      "role": "Data Analyst Intern",
+      "organisation": "Innovative",
+      "startDate": "Jul, 2022",
+      "endDate": "Dec, 2022",
+      "experiences": [
+        "Analyzed sales performance data and provided actionable insights",
+        "Created dashboards using Power BI and Excel"
+      ],
+    "imageSrc": "/history/innovate.jpg"
+  }
+]
+

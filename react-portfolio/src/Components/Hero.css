@@ -5,7 +5,7 @@
     justify-content: space-between;
     z-index: 1;
     gap: 30px;
-    margin: 0 10%;
+    margin: 0 5%;
 }
 
 .content{
@@ -24,13 +24,19 @@
     animation: floating 3s ease-in-out infinite;
 }
 
-.h1{
-    font-size: 40px;
+.h2{
+    font-size: 30px;
     font-weight: 900;
     margin-bottom: 33px;
     background: linear-gradient(90deg, rgb(221, 101, 101) 60%, rgba(136, 179, 239, 0.7) 140%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+.resume-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
 }
 
 @media screen and (max-width:830px){
