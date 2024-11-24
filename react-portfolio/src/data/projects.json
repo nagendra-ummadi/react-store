@@ -1,26 +1,42 @@
 [
   {
-    "title": "Project A",
+    "title": "Fake store",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "This is a project made to learn the api handling.",
     "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "demo": "https://nag-fakestore.netlify.app/",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
   },
   {
     "title": "Project B",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "demo": "https://nag-fakestore.netlify.app/",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
   },
   {
     "title": "Project C",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "demo": "https://nag-fakestore.netlify.app/",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
+  },
+  {
+    "title": "Project C",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node"],
+    "demo": "https://nag-fakestore.netlify.app/",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
+  },
+  {
+    "title": "Project C",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node"],
+    "demo": "https://nag-fakestore.netlify.app/",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
   }
 ]

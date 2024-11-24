@@ -1,5 +1,5 @@
 #about{
-    margin: 20px 5%;
+    margin: 20px 10%;
 }
 
 .about-title{
@@ -55,6 +55,9 @@
 
 
 @media screen and (max-width:830px){
+    #about{
+        margin: 20px 2%;
+    }
     .about-container{
         display: flex;
         flex-direction: column;

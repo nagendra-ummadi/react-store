@@ -1,0 +1,143 @@
+
+#contact {
+  margin: 3% 10%;
+  font-family: Arial, sans-serif;
+}
+  
+.title {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.contact-section {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 20px;
+}
+
+.cards-container {
+    display: flex;
+    width: 40%;
+    gap: 30px;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .card {
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(237, 235, 235, 0.964);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(237, 235, 235, 0.974);
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+
+.contact-form {
+flex: 1;
+max-width: 50%;
+background-color: #2f2f30;
+padding: 40px 50px;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(223, 220, 220, 0.936);
+}
+.contact-form:hover{
+/* transform: rotateY(-230deg) rotateX(-10deg) ; */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(237, 235, 235, 0.974)
+}
+
+.contact-form h2 {
+margin-bottom: 20px;
+font-size: 1.5rem;
+font-weight: 900;
+text-align: center;
+color: #cccccc;
+}
+
+.contact-form label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: #cccccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+outline: none;
+border: none;
+color: #cccccc;
+border-bottom: 1px solid #cccccc;
+background-color: #2f2f30;
+border-radius: 15px;
+font-size: 1rem;
+}
+
+.contact-form textarea {
+resize: vertical;
+height: 100px;
+border: 1px solid #cccccc;
+}
+
+.contact-form button {
+padding: 10px 15px;
+font-size: 1rem;
+color: #fff;
+background-color: #183342;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+width: 100%;
+border-radius: 15px;
+transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+background-color: #074e74da;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.contact-section {
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+.cards-container{
+  width: 100%;
+}
+
+.contact-left,
+.contact-form {
+    max-width: 100%;
+}
+}
