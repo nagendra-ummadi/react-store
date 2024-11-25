@@ -1,6 +1,6 @@
 
 #contact {
-  margin: 3% 10%;
+  margin: 3% 10% 0 10%;
   font-family: Arial, sans-serif;
 }
   
@@ -125,6 +125,18 @@ transition: background-color 0.3s ease;
 background-color: #074e74da;
 }
 
+.footer{
+  margin-top: 10%;
+  width: 100%;
+  background-image: linear-gradient(230deg, rgba(255,255,255,0.3) 10%, rgba(0,0,0,0.2) 90%);
+  color: #dedada;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 10px;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
 .contact-section {
@@ -139,5 +151,8 @@ background-color: #074e74da;
 .contact-left,
 .contact-form {
     max-width: 100%;
+}
+.footer{
+  font-size: 7px;
 }
 }

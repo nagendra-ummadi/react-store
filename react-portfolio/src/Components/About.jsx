@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import aboutImg from "../assets/aboutImage.png";
 import cursorIcon from "../assets/cursorIcon.png";
 import serverIcon from "../assets/serverIcon.png";
 import uiIcon from "../assets/uiIcon.png";
-
+import AOS from 'aos';
+import '../../node_modules/aos/dist/aos.css';
 
 function About(){
+    useEffect(()=>{
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            easing: "ease-in-out", // Easing function
+            once: false, // Only animate once
+          });
+    },[])
     return (
         <section id="about">
             <h1 className="about-title">About</h1>
-            <div className="about-container">
+            <div className="about-container" data-aos="zoom-in-up">
                 <img src= {aboutImg} alt="working-img" className="about-image" />
                 <ul className="about-items">
                     <li className="about-item">

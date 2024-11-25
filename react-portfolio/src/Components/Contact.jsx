@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./Contact.css"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,13 +6,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { faGithub,faHackerrank,faInstagram } from "@fortawesome/free-brands-svg-icons";
 import {db} from "./firebase";
-import { collection,addDoc,getDocs } from "firebase/firestore/lite";
+import { collection,addDoc, getDoc, doc } from "firebase/firestore/lite";
+import AOS from 'aos';
+import '../../node_modules/aos/dist/aos.css';
 
 export const Contact = () => {
     const [name,setName] = useState("");
     const [mobile,setMobile] = useState("");
     const [email,setEmail] = useState("")
     const [message,setMessage] = useState("");
+    
+    useEffect(()=>{
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        easing: "ease-in-out", // Easing function
+        once: false, // Only animate once
+      });
+    },[])
 
     const cards = [
         {
@@ -45,11 +55,19 @@ export const Contact = () => {
       e.preventDefault()
       const formData = new FormData(e.target)
       const data = {}
+      setTimeout(()=>{
+        alert("Messge has been sended 👍")
+        setName("")
+        setEmail("")
+        setMobile("")
+        setMessage("")
+      },1000)
       
       formData.forEach((val,key)=>{
-        data[val] = key
+        data[key] = val
       })
       addData(data)
+      
     }
 
     async function addData(data) {
@@ -60,21 +78,19 @@ export const Contact = () => {
         console.error("Error adding document: ", e);
       }
     }
-    
     return(
         <section id="contact">
             <h2 className="title">Contact Me</h2>
             <div className="contact-section">
             <div className="cards-container">
                 {cards.map((card, index) => (
-                    <a href={card.link} target="_blank" rel="noopener noreferrer" key={index} className="card" style={{ borderColor: card.color }}>
+                    <a href={card.link} target="_blank" rel="noopener noreferrer" key={index} className="card" data-aos="zoom-in" style={{ borderColor: card.color }}>
                     <FontAwesomeIcon icon={card.icon} className="card-icon" style={{ color: card.color }} />
                     <h3 className="card-title">{card.title}</h3>
                 </a>
                 ))}
-
-    </div>
-                <div className="contact-form">
+              </div>
+                <div className="contact-form" data-aos="flip-right">
                 <form className="form" onSubmit={handleSubmit} method="POST">
                     <h2>Let's Connect 📲</h2>
                     <label>Name</label>
@@ -87,10 +103,17 @@ export const Contact = () => {
                     <textarea placeholder="Your Message" name="message" value={message} onChange={(e)=>setMessage(e.target.value)} required>
                     </textarea>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">Send</button>
                 </form>
                 </div>
+
             </div>
+            <footer className="footer">
+              <p>Crafting seamless interfaces and uncovering insights through data.</p>
+              <small>©  Nagendra Obuldasu Ummadi. All rights reserved.</small>
+            </footer>
+            
         </section>
+        
     )
 }

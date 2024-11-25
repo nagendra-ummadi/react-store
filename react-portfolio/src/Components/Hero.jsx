@@ -1,15 +1,23 @@
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import profile from "../assets/profile.jpg"
-import React from "react";
+import React, { useEffect } from "react";
 import "./Hero.css";
 import resume from "../assets/Nagendra_Resume.pdf";
+import AOS from 'aos';
+import '../../node_modules/aos/dist/aos.css'
 
 function Hero(){
+    useEffect(()=>{
+        AOS.init({
+            duration: 2000, // Animation duration in milliseconds
+            easing: "linear", // Easing function
+            // once: false, // Only animate once
+          });
+    },[])
     return (
         <section className="hero-section">
             <div className="content">
                 <h2 className="h2 text-light">Hello, I'm Nagendra</h2>
-                {/* <small className="text-light fs-xx-small">Designing Seamless Interfaces | Building Data-Driven Solutions</small> */}
                 <p className="description text-light">
                 A passionate Fullstack Developer with a strong foundation in React.js and Node.js. Alongside my web development skills, 
                 I'm proficient in Excel, SQL, Python, and Power BI, making me versatile in both development 
@@ -20,7 +28,7 @@ function Hero(){
                 <a href={resume} download className="btn btn-danger">View Resume</a>
                 </div>
             </div>
-            <img src={profile}  alt="profile image" className="profile-img"/>
+            <img src={profile}  alt="profile image" className="profile-img" data-aos="flip-left"/>
         </section>
     )
 }

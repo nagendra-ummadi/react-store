@@ -39,8 +39,12 @@
 
 .menu-items a{
     font-size: 20px;
-    color: #fff;
+    color: #c2b7b7;
     text-decoration: none;
+}
+.menu-items a:hover{
+    font-weight: 600;
+    color: white;
 }
 .menuBtn{
     display: none;

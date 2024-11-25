@@ -1,9 +1,19 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./Projects.css"
 import projectlist from "../data/projects.json"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import AOS from 'aos';
+import '../../node_modules/aos/dist/aos.css';
 
 export const Projects = () =>{
+    useEffect(()=>{
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            easing: "ease-in-out", // Easing function
+            once: false, // Only animate once
+          });
+    },[])
+
     const colors = [
         "#FF5733", // Red
         "#33FF57", // Green
@@ -21,7 +31,9 @@ export const Projects = () =>{
       const projects = projectlist.slice(0,noOfElements);
 
       const loadmore = () =>{
-        setNoOfElements(noOfElements + noOfElements)
+        setTimeout(()=>{
+            setNoOfElements(noOfElements + noOfElements)
+        },2000)
       }
       
     return(
@@ -30,7 +42,7 @@ export const Projects = () =>{
             <div className="projects">
                 {
                     projects.map((project,idx) =>{
-                        return <div key={idx} className="project-item">
+                        return <div key={idx} className="project-item" data-aos="flip-left">
                             <img src={project.imageSrc} alt="project-image" />
                             <h4>{project.title}</h4>
                             <p>{project.description}</p>
@@ -53,7 +65,7 @@ export const Projects = () =>{
                 }
             </div>
             <div className="load-more-div">
-                <button type="submit" className="load-more" onClick={loadmore}>Load more</button>
+                <button type="submit" className="load-more" onClick={loadmore} data-aos="flip-down">Load more</button>
             </div>
         </section>
     )
