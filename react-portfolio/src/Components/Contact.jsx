@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faPhone,faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { faGithub,faHackerrank,faInstagram } from "@fortawesome/free-brands-svg-icons";
-// import {db} from "./firebase";
-
+import {db} from "./firebase";
+import { collection,addDoc,getDocs } from "firebase/firestore/lite";
 
 export const Contact = () => {
     const [name,setName] = useState("");
@@ -40,6 +40,27 @@ export const Contact = () => {
           color: "#E4405F",
         },
       ];
+
+    const handleSubmit = (e) =>{
+      e.preventDefault()
+      const formData = new FormData(e.target)
+      const data = {}
+      
+      formData.forEach((val,key)=>{
+        data[val] = key
+      })
+      addData(data)
+    }
+
+    async function addData(data) {
+      try {
+        const docRef = await addDoc(collection(db, "users"), data);
+        console.log("Document written with ID: ", docRef.id);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+    }
+    
     return(
         <section id="contact">
             <h2 className="title">Contact Me</h2>
@@ -54,18 +75,20 @@ export const Contact = () => {
 
     </div>
                 <div className="contact-form">
+                <form className="form" onSubmit={handleSubmit} method="POST">
                     <h2>Let's Connect 📲</h2>
                     <label>Name</label>
-                    <input type="text" placeholder="Your good name?" value={name} onChange={(e)=>setName(e.target.value)} required/>
+                    <input type="text" placeholder="Your good name?" name="name" value={name} onChange={(e)=>setName(e.target.value)} required/>
                     <label>Mobile No</label>
-                    <input type="number" placeholder="Your Mobile number?" pattern="[0-9]{,10}" value={mobile} onChange={(e)=>setMobile(e.target.value)}  required/>
+                    <input type="number" placeholder="Your Mobile number?" name="mobile" pattern="[0-9]{,10}" value={mobile} onChange={(e)=>setMobile(e.target.value)}  required/>
                     <label>Email</label>
-                    <input type="email" placeholder="Your Email?" value={email} onChange={(e)=>setEmail(e.target.value)}  required/>
+                    <input type="email" placeholder="Your Email?" name="email" value={email} onChange={(e)=>setEmail(e.target.value)}  required/>
                     <label>Message</label>
-                    <textarea placeholder="Your Message" value={message} onChange={(e)=>setMessage(e.target.value)} required>
+                    <textarea placeholder="Your Message" name="message" value={message} onChange={(e)=>setMessage(e.target.value)} required>
                     </textarea>
 
                     <button type="submit">Submit</button>
+                </form>
                 </div>
             </div>
         </section>
