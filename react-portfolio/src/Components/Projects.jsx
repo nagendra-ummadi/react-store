@@ -33,7 +33,7 @@ export const Projects = () =>{
       const loadmore = () =>{
         setTimeout(()=>{
             setNoOfElements(noOfElements + noOfElements)
-        },2000)
+        },1500)
       }
       
     return(
