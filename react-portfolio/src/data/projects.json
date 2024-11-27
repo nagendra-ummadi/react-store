@@ -1,42 +1,42 @@
 [
   {
-    "title": "Fake store",
+    "title": "Fake Shop",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the api handling.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://nag-fakestore.netlify.app/",
-    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
+    "description": "This is a project made to develop a simple shaopping website with Routing",
+    "skills": ["React", "Routing","Redux"],
+    "demo": "https://nag-fakeshop.netlify.app/",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakeshop"
   },
   {
-    "title": "Project B",
+    "title": "To do",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://nag-fakestore.netlify.app/",
-    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
+    "description": "This is a project made to Manage  tasks.",
+    "skills": ["React", "Bootstrap"],
+    "demo": "https://nag-todo.netlify.app/",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/todo-list"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://nag-fakestore.netlify.app/",
-    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
-  },
-  {
-    "title": "Project C",
+    "title": "Project",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node"],
-    "demo": "https://nag-fakestore.netlify.app/",
-    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
+    "demo": "",
+    "source": ""
   },
   {
-    "title": "Project C",
+    "title": "Project",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["React", "Express", "Node"],
-    "demo": "https://nag-fakestore.netlify.app/",
-    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakestore"
+    "demo": "",
+    "source": ""
+  },
+  {
+    "title": "Project",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Express", "Node"],
+    "demo": "",
+    "source": ""
   }
 ]
