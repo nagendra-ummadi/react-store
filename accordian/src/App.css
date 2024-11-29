@@ -1,0 +1,38 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 50%;
+  margin: auto;
+  background-color: antiquewhite;
+}
+.container>button{
+  background-color: rgb(56, 82, 105);
+  font-size: large;
+  color: white;
+  padding: 20px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+}
+
+.container .accordian{
+  background-color: rgb(56, 82, 105);
+  width: 80%;
+  color: #fff;
+  margin: 20px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 30px;
+}
+.content{
+  margin: 20px;
+}

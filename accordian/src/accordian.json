@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "question": "What is React?",
+      "answer": "React is a JavaScript library for building user interfaces, developed by Facebook."
+    },
+    {
+      "id": 2,
+      "question": "What is JSX in React?",
+      "answer": "JSX is a syntax extension for JavaScript that looks similar to XML or HTML, used in React to describe the UI structure."
+    },
+    {
+      "id": 3,
+      "question": "What are React components?",
+      "answer": "React components are independent, reusable pieces of code that represent a part of the UI."
+    },
+    {
+      "id": 4,
+      "question": "What is the virtual DOM in React?",
+      "answer": "The virtual DOM is a lightweight representation of the real DOM that React uses to optimize updates and rendering."
+    },
+    {
+      "id": 5,
+      "question": "What are props in React?",
+      "answer": "Props are short for properties and are used to pass data from parent components to child components in React."
+    }
+  ]
+  
