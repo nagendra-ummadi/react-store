@@ -1,5 +1,13 @@
 [
   {
+    "title": "Netflix Clone",
+    "imageSrc": "projects/netflix_project.jpg",
+    "description": "Download the source code to build Netflix clone website using React JS, Firebase and the movie database API.",
+    "skills": ["React", "Firebase", "Routing"],
+    "demo": "https://ott-platform-nag.netlify.app/",
+    "source": ""
+  },
+  {
     "title": "Fake Shop",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to develop a simple shaopping website with Routing",
@@ -14,14 +22,6 @@
     "skills": ["React", "Bootstrap"],
     "demo": "https://nag-todo.netlify.app/",
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/todo-list"
-  },
-  {
-    "title": "Project",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "",
-    "source": ""
   },
   {
     "title": "Project",

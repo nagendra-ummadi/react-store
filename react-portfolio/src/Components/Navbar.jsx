@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import menuIcon from '../assets/menuIcon.png';
 import closeIcon from '../assets/closeIcon.png';
-
+import Logo from "../assets/logo2.png";
 
 
 function Navbar(){

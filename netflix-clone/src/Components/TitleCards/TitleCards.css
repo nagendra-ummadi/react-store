@@ -1,0 +1,35 @@
+.titlecards{
+    margin: 30px 0 30px 6%;
+    align-items: center;
+}
+.cards-list{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.titlecards h4{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card-item img{
+    cursor: pointer;
+    border-radius: 7px;
+    width: 200px;
+    height: 300px;
+
+}
+.card-item p{
+    text-align: center;
+}
+.cards-list::-webkit-scrollbar{
+    display: none
+}
+
+@media screen and (max-width:820px){
+    .card-item img {
+        width: 100px;
+        height: 150px;
+    }
+}

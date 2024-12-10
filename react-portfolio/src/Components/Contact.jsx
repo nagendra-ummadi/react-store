@@ -84,13 +84,13 @@ export const Contact = () => {
             <div className="contact-section">
             <div className="cards-container">
                 {cards.map((card, index) => (
-                    <a href={card.link} target="_blank" rel="noopener noreferrer" key={index} className="card" data-aos="zoom-out" style={{ borderColor: card.color }}>
+                    <a href={card.link} target="_blank" rel="noopener noreferrer" key={index} className="card" data-aos="fade-right" style={{ borderColor: card.color }}>
                     <FontAwesomeIcon icon={card.icon} className="card-icon" style={{ color: card.color }} />
                     <h3 className="card-title">{card.title}</h3>
                 </a>
                 ))}
               </div>
-                <div className="contact-form" data-aos="flip-right">
+                <div className="contact-form" data-aos="fade-left">
                 <form className="form" onSubmit={handleSubmit} method="POST">
                     <h2>Let's Connect 📲</h2>
                     <label>Name</label>
