@@ -8,6 +8,12 @@
     text-transform: uppercase;
     letter-spacing: 1.25px;
 }
+.title-description{
+    color: rgba(255,255,255,0.7);
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .projects{
     display: flex;
@@ -37,8 +43,9 @@
     transform: scale(1.05);
     box-shadow: 0 4px 6px #fff;
 }
-.project-item img{
+.project-item>img{
     padding: 20px;
+    border-radius: 10px;
 }
 .project-item h4{
     font-weight: 700;
@@ -48,7 +55,7 @@
 }
 .project-item p{
     font-style: oblique;
-    font-size: medium;
+    font-size: small;
     margin-left: 10px;
 }
 .project-technologies{
@@ -109,11 +116,18 @@
     background-size: 100% 100%;
     transform: scale(0.9);
 }
-@media screen and (max-width:830px){
+@media screen and (max-width:768px){
     #projects{
         margin: 1% 2%;
     }
     .projects{
         flex-direction: column;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .title-description{
+        font-size: small;
+        width: 100%;
     }
 }

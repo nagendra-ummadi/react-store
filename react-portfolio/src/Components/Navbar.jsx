@@ -12,7 +12,7 @@ function Navbar(){
     return (
         <nav className="navbar">
             {/* <img src="./src/assets/logo.png" alt="logo" /> */}
-            <a className="nav-title" href="/">Code Hunter</a>
+            <a className="nav-title" href="/">N-Reactify</a>
 
             <div className="menu">
                 {/* <FontAwesomeIcon icon={burger} /> */}

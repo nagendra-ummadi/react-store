@@ -2,23 +2,23 @@
   {
     "title": "Netflix Clone",
     "imageSrc": "projects/netflix_project.jpg",
-    "description": "Download the source code to build Netflix clone website using React JS, Firebase and the movie database API.",
+    "description": "Developed a Netflix clone using React.js, implementing routing, Firebase authentication, and API integration to fetch and display dynamic movie data.",
     "skills": ["React", "Firebase", "Routing"],
     "demo": "https://ott-platform-nag.netlify.app/",
-    "source": ""
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/netflix-clone"
   },
   {
     "title": "Fake Shop",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to develop a simple shaopping website with Routing",
+    "imageSrc": "projects/fakeshop.jpg",
+    "description": "Developed a responsive e-commerce frontend using React.js with features like routing and state management via Redux, ensuring seamless navigation and user experience.",
     "skills": ["React", "Routing","Redux"],
     "demo": "https://nag-fakeshop.netlify.app/",
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakeshop"
   },
   {
     "title": "To do",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to Manage  tasks.",
+    "imageSrc": "projects/todo.jpg",
+    "description": "Built a dynamic Todo application using React.js, enabling users to add, delete, and update tasks with a seamless user interface and real-time state management. ",
     "skills": ["React", "Bootstrap"],
     "demo": "https://nag-todo.netlify.app/",
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/todo-list"

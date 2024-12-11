@@ -12,7 +12,7 @@
 
 .about-container{
     display: flex;
-    background-color: rgba(0,0,0,0.3);
+    background-image: linear-gradient(rgba(255,255,255,0.02), rgba(255,255,255,0.01));
     margin: 3% 3%;
     border-radius: 15px;
 }
@@ -54,9 +54,9 @@
 }
 
 
-@media screen and (max-width:830px){
+@media screen and (max-width:768px){
     #about{
-        margin: 20px 2%;
+        margin: 3% 1%;
     }
     .about-container{
         display: flex;
@@ -64,18 +64,20 @@
         justify-content: center;
         align-items: center;
     }
+    .about-title{
+        font-size: 25px;
+    }
     .about-image{
         width: 30%;
         height: 30%;
     }
     .about-items{
-        margin: 0 10px;
+        margin: 0;
+        gap: 10px;
         padding: 0 5px;
     }
     .about-item{
         gap: 2px;
-    }
-    .about-container{
-        margin: 1% 1%;
+        font-size: small;
     }
 }

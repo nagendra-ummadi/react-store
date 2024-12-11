@@ -1,6 +1,8 @@
 .App{
   background-color: rgb(4, 21, 45);
   width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
