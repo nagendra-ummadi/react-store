@@ -12,8 +12,8 @@ const Navbar = () => {
     const handleScroll = () => {
     const navbar = document.querySelector("navbar")
     const scrolledToBottom = window.innerHeight + window.scrollY >= window.innerHeight+100
-    console.log("w" ,window.innerHeight)
-    console.log("scrolly" ,window.scrollY)
+    // console.log("w" ,window.innerHeight)
+    // console.log("scrolly" ,window.scrollY)
     // console.log(window.body.offsetHeight)
     console.log(scrolledToBottom)
     if (scrolledToBottom) {
