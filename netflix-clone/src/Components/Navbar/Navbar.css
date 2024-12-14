@@ -10,7 +10,7 @@
     z-index: 1;
 }
 .navbar.scroll{
-    background: linear-gradient(to right, rgba(24, 24, 24, 0.2) 40%,rgba(255,255,255,0.3));
+    background: linear-gradient(to right, rgba(46, 44, 44, 0.912) 40%,rgba(40, 37, 37, 0.819));
     border-bottom: 2px transparent rgba(41, 39, 39, 0.6);
 }
 

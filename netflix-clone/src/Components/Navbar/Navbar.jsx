@@ -42,7 +42,6 @@ const Navbar = () => {
         </div>
         <div className='navbar-right'>
             <img src={searchIcon} alt='search-icon' className='icons' />
-            <p>Children</p>
             <img src={bellIcon} alt="bell-icon" className='icons'/>
             <div className='navbar-profile'>
                 <img src={profileImg} alt="profile-icon" className='profile'/>

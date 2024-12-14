@@ -4,44 +4,19 @@ import "./TitleCards.css";
 import movies from "../../assets/cards/movies.json";
 import axios from "axios";
 import { useEffect } from "react";
+import englishMovies from  "../../assets/cards/english_movies.json";
+import teluguMovies from "../../assets/cards/telugu_movies.json";
+import {Link} from "react-router-dom";
 
-const TitleCards = ({ category }) => {
-  const config = {
-    "Content-Type": "application/json",
-    "trakt-api-version": "2",
-    "trakt-api-key":
-      "8102fb7f971471830808d7895374a0048ef3d212d1113824bf7f06f87d601744",
-  };
-  var request = new XMLHttpRequest();
-
-  request.open("GET", "https://api.trakt.tv/movies/popular");
-
-  request.setRequestHeader("Content-Type", "application/json");
-  request.setRequestHeader("trakt-api-version", "2");
-  request.setRequestHeader(
-    "trakt-api-key",
-    "8102fb7f971471830808d7895374a0048ef3d212d1113824bf7f06f87d601744"
-  );
-
-  request.onreadystatechange = function () {
-    if (this.readyState === 4) {
-      // console.log("Status:", this.status);
-      // console.log("Headers:", this.getAllResponseHeaders());
-      // console.log("Body:", this.responseText);
-      const data = this.responseText
-      console.log(data)
-    }
-  };
-
-  request.send();
-  for (let i = movies.length - 1; i > 0; i--) {
+const TitleCards = ({ category, lang }) => {
+  for (let i = englishMovies.length - 1; i > 0; i--) {
     // Generate random index
     const j = Math.floor(Math.random() * (i + 1));
 
     // Swap elements at indices i and j
-    const temp = movies[i];
-    movies[i] = movies[j];
-    movies[j] = temp;
+    const temp = englishMovies[i];
+    englishMovies[i] = englishMovies[j];
+    englishMovies[j] = temp;
   }
 
   return (
@@ -51,23 +26,34 @@ const TitleCards = ({ category }) => {
         {/* {cards.map((card, idx) => {
           return (
             <div className="card-item" key={idx}>
-              <img src={card.image} alt="card-image" />
+                <img src={card.image} alt="card-image" />
             </div>
           );
         })
         } */}
-        {movies.map((movie, idx) => {
-          return (
-            <div className="card-item" key={idx}>
-              <img src={movie.Poster} alt="card-image" />
-              <p>{movie.Title}</p>
-            </div>
-          );
-        })}
-        
+        {
+          (lang !== "english"
+            ? teluguMovies.map((movie, idx) => {
+                return (
+                  <div className="card-item" key={idx}>
+                    <img src={movie.Poster} alt="card-image" />
+                    <p>{movie.Title}</p>
+                  </div>
+                );
+              })
+            : englishMovies.map((movie, idx) => {
+                return (
+                  <Link to={`/player/${movie.imdbid}`}>
+                    <div className="card-item" key={idx}>
+                    <img src={movie.image} alt="movie-card" />
+                    <p>{movie.title}</p>
+                  </div>
+                  </Link>
+                );
+              }))
+        }
       </div>
     </div>
   );
 };
-
 export default TitleCards;

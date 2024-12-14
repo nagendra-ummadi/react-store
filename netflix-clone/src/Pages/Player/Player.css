@@ -1,0 +1,19 @@
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:1% 10%;
+}
+.backIcon{
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}

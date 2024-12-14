@@ -33,12 +33,12 @@ const Home = () => {
         </div>
       </div>
       <div className="start-card">
-        <TitleCards category="Trending Now"/>
+        <TitleCards category="Trending Now" lang="english"/>
       </div>
       <div className="more-cards">
-      <TitleCards category="Recommended"/>
-      <TitleCards category="New and Popular"/>
-      <TitleCards category="Netflix Originals"/>
+      <TitleCards category="Recommended" lang="english"/>
+      <TitleCards category="New and Popular" lang="english"/>
+      <TitleCards category="Netflix Originals" lang="english"/>
       
       </div>
       <Footer/>
