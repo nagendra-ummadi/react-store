@@ -57,8 +57,10 @@
 }
 .fields.buttons{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+.fields.buttons input{
+    width: 100%;
 }
 .user-options p span{
     color: rgba(124, 183, 228, 0.9);

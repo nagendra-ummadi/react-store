@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import englishMovies from "../../assets/cards/english_movies.json";
-import teluguMovies from "../../assets/cards/telugu_movies.json";
+// import teluguMovies from "../../assets/cards/telugu_movies.json";
 import backArrowIcon from "../../assets/back_arrow_icon.png";
 import "./Player.css";
 
@@ -20,7 +20,7 @@ const Player = () => {
    <>
    
     <div className="player">
-    <img src={backArrowIcon} alt="Go back" className="backIcon" onClick={()=> navigate('/')}/>
+    <img src={backArrowIcon} alt="Go back" className="backIcon" onClick={()=> navigate("/")}/>
       <h4>Now Playing: {movie.title}</h4>
       <iframe
         src={movie.imdb_link}

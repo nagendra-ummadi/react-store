@@ -65,6 +65,7 @@
 }
 .navbar-profile:hover .dropdown{
     display: block;
+    cursor: pointer;
 }
 
 @media screen and (max-width:768px){

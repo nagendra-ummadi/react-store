@@ -6,6 +6,7 @@ import searchIcon from "../../assets/search_icon.svg";
 import bellIcon from "../../assets/bell_icon.svg";
 import profileImg from "../../assets/profile_img.png"
 import caretImg from "../../assets/caret_icon.svg";
+import { logout } from '../../firebase';
 const Navbar = () => {
     const [isAtBottom, setIsAtBottom] = useState(false);
 
@@ -47,7 +48,7 @@ const Navbar = () => {
                 <img src={profileImg} alt="profile-icon" className='profile'/>
                 <img src={caretImg} alt="menu-icon" />
                 <div className='dropdown'>
-                <p>Sign Out</p>
+                <p onClick={()=> logout()}>Sign Out</p>
             </div>
             </div>
         </div>
