@@ -18,7 +18,7 @@
   {
     "title": "Tech Quiz",
     "imageSrc": "projects/quiz.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "A responsive React-based Tech Quiz application where users can select categories, answer questions, and view their scores. It features intuitive navigation and real-time answer validation for an engaging experience.",
     "skills": ["React", "Firebase", "Routing"],
     "demo": "https://ultimate-tech-quiz-app.netlify.app/",
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/quiz-app"
