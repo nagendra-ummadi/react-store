@@ -11,9 +11,17 @@
     "title": "Fake Shop",
     "imageSrc": "projects/fakeshop.jpg",
     "description": "Developed a responsive e-commerce frontend using React.js with features like routing and state management via Redux, ensuring seamless navigation and user experience.",
-    "skills": ["React", "Routing","Redux"],
+    "skills": ["React", "Routing","Redux", "Semantic UI"],
     "demo": "https://nag-fakeshop.netlify.app/",
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/fakeshop"
+  },
+  {
+    "title": "Tech Quiz",
+    "imageSrc": "projects/quiz.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "Firebase", "Routing"],
+    "demo": "https://ultimate-tech-quiz-app.netlify.app/",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/quiz-app"
   },
   {
     "title": "To do",
@@ -22,14 +30,6 @@
     "skills": ["React", "Bootstrap"],
     "demo": "https://nag-todo.netlify.app/",
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/todo-list"
-  },
-  {
-    "title": "Project",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "",
-    "source": ""
   },
   {
     "title": "Project",
