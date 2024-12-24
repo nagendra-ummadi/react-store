@@ -9,6 +9,7 @@ import {db} from "./firebase";
 import { collection,addDoc, getDoc, doc } from "firebase/firestore/lite";
 import AOS from 'aos';
 import '../../node_modules/aos/dist/aos.css';
+import {toast} from "react-toastify";
 
 export const Contact = () => {
     const [name,setName] = useState("");
@@ -56,7 +57,8 @@ export const Contact = () => {
       const formData = new FormData(e.target)
       const data = {}
       setTimeout(()=>{
-        alert("Messge has been sended 👍")
+        // toast.success("Message has been sended 👍",{position:"bottom-center",})
+        alert("Message has been sended 👍")
         setName("")
         setEmail("")
         setMobile("")

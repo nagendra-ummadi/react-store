@@ -17,7 +17,7 @@ function Hero(){
     return (
         <section className="hero-section">
             <div className="content">
-                <h2 className="h2 text-light">Hello, I'm Nagendra 👋</h2>
+                <h2 className="h2">Hello, I'm Nagendra <span>👋</span></h2>
                 <p className="description text-light">
                 &nbsp;&nbsp; &nbsp;&nbsp;A passionate Fullstack Developer with a strong foundation in React.js and Node.js. Alongside my web development skills, 
                 I'm proficient in Excel, SQL, Python, and Power BI, making me versatile in both development 

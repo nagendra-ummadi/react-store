@@ -1,0 +1,45 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
+.user-input{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.user-input input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    font-weight: 600;
+    font-size: 20px;
+}
+.user-input label{
+    font-size: 20px;
+    color: rgba(255,255,255,0.5);
+    font-weight: bold;
+}
+.menu .dropdown{
+    width: 250px;
+    padding: 5px 20px;
+    background: #ee9ca7;
+    margin: 5px 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}

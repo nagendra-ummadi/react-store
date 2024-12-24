@@ -58,7 +58,7 @@ import { auth } from "./firebase";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
 import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.min.css";
+import "react-toastify/ReactToastify.min.css";
 
 const App = () => {
   const navigate = useNavigate();

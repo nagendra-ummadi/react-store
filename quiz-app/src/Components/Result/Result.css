@@ -1,0 +1,18 @@
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.resultCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+    background: linear-gradient(to top, rgba(118, 185, 202, 0.8), rgba(56, 168, 193, 0.85));;
+    background: linear-gradient(to right, #ee9ca7, #ffdde1);
+    border-radius: 15px;
+}

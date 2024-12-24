@@ -26,10 +26,14 @@ const ProductDetails = () => {
       dispatch(removeSelectedProduct());
     };
   }, [productId]);
+
   return (
     <div className="ui grid container">
       {Object.keys(product).length === 0 ? (
-        <div>...Loading</div>
+        <div style={{display:"flex", flexDirection:"column",gap:"30px", justifyContent:"center", alignItems:"center", height: "100vh", width:"100vw", fontSize:"50px"}}>
+          <i className="spinner loading icon" ></i>
+          Loading...
+        </div>
       ) : (
         <div className="ui placeholder segment">
           <div className="ui two column stackable center aligned grid">

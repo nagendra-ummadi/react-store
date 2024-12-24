@@ -75,5 +75,14 @@
     .navbar-right{
         gap: 10px;
     }
+    .navbar-profile .profile{
+        width: 25px;
+
+    }
+    .navbar-profile>.dropdown{
+        position: absolute;
+        top: 70%;
+        right: 5%;
+    }
 
 }

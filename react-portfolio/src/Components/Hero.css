@@ -32,7 +32,10 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-  
+span{
+    color: rgba(255,255,0,0.9);
+    background: none;
+}
 .resume-section{
     display: flex;
     align-items: center;
