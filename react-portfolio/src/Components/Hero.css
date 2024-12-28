@@ -6,6 +6,7 @@
     z-index: 1;
     gap: 30px;
     margin: 0 10%;
+    padding: 5% 0;
 }
 
 .content{
@@ -24,13 +25,26 @@
     animation: floating 3s ease-in-out infinite;
 }
 
-.h2{
+.dynamic-title{
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 33px;
     background: linear-gradient(90deg, rgb(221, 101, 101) 60%, rgba(136, 179, 239, 0.7) 140%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 span{
     color: rgba(255,255,0,0.9);
@@ -47,6 +61,7 @@ span{
     .hero-section{
         flex-direction: column-reverse;
         margin: 1% 1%;
+        padding: 13% 0;
     }
     .description{
         padding: 10px;
