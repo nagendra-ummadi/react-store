@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+    padding: 10px 30px;
+    z-index: 5;
+}
+
+.logo {
+    font-family: "Russo One", "serif";
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.logo:hover span {
+    color: #fff;
+}
+
+.banner {
+    width: 100%;
+    height: 780px;
+    object-fit: cover;
+    display: block;
+    transform: translateY(-100px);
+    z-index: -5;
+}
+
+.menu-items {
+    display: flex;
+    font-family: "Russo One", "serif";
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.menu-items li {
+    position: relative;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #a19e9e;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.menu-items li a:hover {
+    color: #fff;
+}
+
+.menu-items li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #ea8a8a;
+    bottom: -10px;
+    left: 0;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.menu-items li:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.welcome-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transform: translateY(-500px);
+}
+
+.welcome-title h4 {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.welcome-title h1 {
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.welcome-title h1 span {
+    color: #d14e4e;
+}
+
+.icons {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        margin: 0 3%;
+        justify-content: space-around;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        gap: 20px;
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 20px 50px;
+        border-radius: 15px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%); 
+        transition: transform 0.3s ease-in-out;
+    }
+
+  
+    .icons {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+
+    .icons i {
+       
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .menu-items.menuOpen {
+        display: flex;
+        transform: translateX(0); 
+    }
+
+    .menu-items li a {
+        color: #000;
+        font-size: 18px;
+    }
+
+    .menu-items li a:hover {
+        color: #d14e4e;
+    }
+    .welcome-title{
+        font-size: 45px;
+    }
+}

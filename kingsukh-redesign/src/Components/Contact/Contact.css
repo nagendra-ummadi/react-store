@@ -1,0 +1,130 @@
+#contact{
+    margin: 2% 0 0 0;
+    padding-top: 2%;
+}
+.contact-section{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+
+}
+.info-section{
+    width: 40%;
+    height: 80%;
+    background-color: lightcoral;
+    padding: 70px;
+    z-index: 5;
+    border-radius: 15px;
+    position: absolute;
+
+}
+.info-section ul{
+    list-style: none;
+}
+.info-section ul li{
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 15px;
+}
+.info-section ul li i{
+    margin-right: 15px;
+    font-size: 15px;
+}
+.info-section .social-icons{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 15px;
+
+}
+.info-section .social-icons li i{
+    font-size: 20px;
+}
+.send-message{
+    width: 80%;
+    background-color: rgb(255,255,255);
+    padding: 70px 150px 70px 100px;
+    position: relative;
+    box-shadow: 3px 5px 5px rgba(0,0,0,0.45);
+    border-radius: 15px;
+    margin-bottom: 2% ;
+    margin-left: 35%;
+    z-index: 1;
+}
+
+.send-message h1{
+    margin: 30px 0;
+}
+.send-message form{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 40px;
+    width: 100%;
+}
+.send-message .animated{
+    margin-top: 30px;
+    width: 100%;
+}
+.send-message form input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.send-message form textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+    /* Stack the info-section and send-message vertically */
+    .contact-section {
+        flex-direction: column;
+        margin: 0 5%;
+        gap: 30px;
+    }
+
+    .info-section {
+        width: 100%;
+        height: auto; /* Adjust height for smaller screens */
+        position: relative;
+        padding: 30px;
+    }
+
+    .send-message {
+        width: 90%; /* Increase width on smaller screens */
+        margin-left: 5%;
+        padding: 50px;
+    }
+
+    /* Adjust form grid layout */
+    .send-message form {
+        grid-template-columns: 1fr; /* Stack the form inputs */
+        grid-gap: 20px;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    .info-section ul li {
+        font-size: 14px;
+    }
+
+    .info-section ul li i {
+        font-size: 18px;
+    }
+
+    .send-message h1 {
+        font-size: 24px;
+    }
+
+    .send-message form input,
+    .send-message form textarea {
+        font-size: 16px;
+    }
+}

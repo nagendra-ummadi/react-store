@@ -1,0 +1,93 @@
+#rooms{
+    margin: 0 5%;
+}
+#rooms h3{
+    font-size: 25px;
+    color: rgba(0,0,0,0.45);
+    font-family: "Rosse one";
+}
+#rooms h3::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #ea8a8a;
+    bottom: -10px;
+    left: 0;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+#rooms h3:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+.room-cards{
+    display: flex;
+    position: relative;
+    gap: 35px;
+    margin: 2% 2%;
+    flex-wrap: wrap; 
+}
+
+.room-card {
+    width: 400px;
+    position: relative;
+    height: auto; 
+    background-color: rgb(235, 229, 229);
+    border-radius: 15px;
+    box-shadow: 3px 5px 5px rgba(0,0,0,0.45);
+    overflow: hidden; 
+}
+
+.room-card .room-image{
+    width: 90%; 
+    height: 200px;
+    margin: 5%; 
+    border-radius: 15px 15px 0 0; 
+}
+
+.room-card .room-image:hover{
+    filter: brightness(110%);
+}
+
+.room-description{
+    padding: 10px 20px; 
+}
+
+.room-description p{
+    font-size: 14px;
+}
+
+.room-card .button{
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.room-card .button:hover{
+    background-color: #d14e4e;
+}
+
+@media screen and (max-width: 768px){
+    .room-cards{
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .room-card{
+        width: 100%; 
+        height: auto;
+    }
+
+    #rooms h3{
+        font-size: 20px; 
+    }
+
+    .room-description p{
+        font-size: 16px; 
+    }
+
+    .room-card .button{
+        bottom: 10px; 
+    }
+}

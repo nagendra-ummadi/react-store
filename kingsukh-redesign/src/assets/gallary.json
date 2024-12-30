@@ -1,0 +1,44 @@
+[
+    
+    {
+        "id": "1",
+        "imagePath" : "/src/assets/ayodhya.webp"
+    },
+    {
+        "id": "2",
+        "imagePath" : "/src/assets/baranti.webp"
+    },
+    {
+        "id": "3",
+        "imagePath" : "/src/assets/flower.jpg"
+    },
+    {
+        "id": "4",
+        "imagePath" : "/src/assets/small.jpg"
+    },
+    {
+        "id": "5",
+        "imagePath" : "/src/assets/large.jpg"
+    },
+    {
+        "id":6,
+        "imagePath": "/src/assets/mithonDam.webp"
+    },
+    {
+        "id":7,
+        "imagePath": "/src/assets/room1.jpg"
+    },
+    {
+        "id":8,
+        "imagePath": "/src/assets/palash.webp"
+    },
+    {
+        "id": 9,
+        "imagePath": "/src/assets/out.jpg"
+    },
+    {
+        "id":10,
+        "imagePath": "/src/assets/recep.jpg"
+    }
+
+]
