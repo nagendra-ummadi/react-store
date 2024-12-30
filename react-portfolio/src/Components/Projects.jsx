@@ -4,6 +4,7 @@ import projectlist from "../data/projects.json";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "../../node_modules/aos/dist/aos.css";
+import {Tilt} from 'react-tilt';
 
 export const Projects = () => {
   useEffect(() => {
@@ -49,7 +50,7 @@ export const Projects = () => {
       <div className="projects">
         {projects.map((project, idx) => {
           return (
-            <div key={idx} className="project-item" data-aos="flip-left">
+            <Tilt><div key={idx} className="project-item" data-aos="flip-left">
               <img src={project.imageSrc} alt="project-image" />
               <h4>{project.title}</h4>
               <p>{project.description}</p>
@@ -78,6 +79,7 @@ export const Projects = () => {
                 </li>
               </ul>
             </div>
+            </Tilt>
           );
         })}
       </div>

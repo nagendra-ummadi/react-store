@@ -39,10 +39,10 @@
     scroll-behavior: smooth;
     scrollbar-width: none; */
 }
-.project-item:hover{
+/* .project-item:hover{
     transform: scale(1.05);
     box-shadow: 0 4px 6px #fff;
-}
+} */
 .project-item>img{
     padding: 20px;
     border-radius: 10px;
@@ -118,6 +118,7 @@
     background-size: 100% 100%;
     /* transform: scale(0.9); */
 }
+
 @media screen and (max-width:768px){
     #projects{
         margin: 1% 2%;
