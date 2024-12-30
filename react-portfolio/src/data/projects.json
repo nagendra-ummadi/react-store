@@ -32,11 +32,11 @@
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/todo-list"
   },
   {
-    "title": "Project",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "",
-    "source": ""
+    "title": "Redesign of Kingsukh Guest House",
+    "imageSrc": "projects/guest_house.png",
+    "description": "The new design enhances navigation and accessibility, making room details and bookings easier to find. A consistent color scheme and engaging visuals create a welcoming online presence.",
+    "skills": ["React", "Semantic UI"],
+    "demo": "https://app.netlify.com/sites/redesign-kingsukh-guest-house/overview",
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/kingsukh-redesign"
   }
 ]
