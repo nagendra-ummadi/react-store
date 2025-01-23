@@ -1,0 +1,137 @@
+body{
+  background-color: #1f1e1e;
+  color: #fff;
+  overflow: hidden;
+}
+h1{
+  text-align: center;
+}
+
+.todo-wrapper{
+  background-color: #151414;
+  padding: 3%;
+  width: fit-content;
+  margin: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin-top: 3%;
+  box-shadow: 0 5px 7px rgb(27, 27, 27);
+}
+
+.todo-inputs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.todo-input-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.todo-input-item label{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.todo-input-item input{
+  padding: 8px 10px;
+  width: 250px;
+  border: none;
+  outline: none;
+}
+.todo-input-item input:focus{
+  outline: 2px solid rgb(0,230,122);
+}
+.primaryBtn{
+  background-color: rgb(0,230,122);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-top: 27px;
+  cursor: pointer;
+}
+.secondaryBtn{
+  background-color: rgb(86, 88, 87);
+  outline: none;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 27px;
+  cursor: pointer;
+}
+.active{
+  background-color: rgb(0,230,122);
+}
+
+.todo-list{
+  display: flex;
+  flex-direction: column;
+}
+.todo-list-item{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #414040;
+  padding: 1px 25px;
+  margin-top: 30px;
+  margin-left: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 5px rgb(43,42,42);
+}
+.todo-input-item .task{
+  width: 80%;
+}
+.task h2{
+  color: rgb(0,230,122);
+  font-size: 25px;
+  font-weight: bold;
+}
+.task p{
+  color: #f6ebee;
+}
+.task small{
+  color: #414040;
+}
+.icons{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icons .icon{
+  font-size: xx-large;
+}
+.delete:hover{
+  cursor: pointer;
+  color: rgb(230,0,0);
+}
+.check:hover{
+  color: rgb(0,230,122);
+}
+
+.edit-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  margin-top: 10px;
+}
+.edit-wrapper input{
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.edit-wrapper  textarea{
+  padding: 10px;
+  border: none;
+  outline: none;
+  resize: vertical;
+}
