@@ -7,7 +7,8 @@ const Result = ({score, totalQuestions, name}) => {
   return (
     <div className='result'>
      <div className='resultCard'>
-     <h3>Welcome again {name}</h3>
+     <h3>Visit again again {name}</h3>
+     <div className='emoji'>{score<10?"😊":"😟"}</div>
      <h5>Thanks for taking the Tech quiz</h5>
      <h2>Your Score :: {score}/{totalQuestions}</h2>
      <button className='ui button primary' onClick={()=>{

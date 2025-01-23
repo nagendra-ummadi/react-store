@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, createContext } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -35,7 +35,7 @@ const ProductDetails = () => {
           Loading...
         </div>
       ) : (
-        <div className="ui placeholder segment">
+          <div className="ui placeholder segment">
           <div className="ui two column stackable center aligned grid">
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">
@@ -49,7 +49,9 @@ const ProductDetails = () => {
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
-                <div className="ui vertical animated button" tabIndex="0">
+                <div className="ui vertical animated button" tabIndex="0" onClick={()=>{
+                  alert("Your product is added Successfully.");
+                }}>
                   <div className="hidden content">
                     <i className="shop icon"></i>
                   </div>
@@ -59,6 +61,7 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
+        
       )}
     </div>
   );

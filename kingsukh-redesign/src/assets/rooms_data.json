@@ -1,14 +1,14 @@
 [
     {
         "id": "1",
-        "image" : "src/assets/small.jpg",
+        "image" : "/assets/small.jpg",
         "roomTitle" : "Cozy Haven Room",
         "description" : "Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.",
         "minPrice" : "1000"
     },
     {
         "id": "2",
-        "image":"src/assets/large.jpg",
+        "image":"/assets/large.jpg",
         "roomTitle" : "Spacious Serenity Suite",
         "description" : "Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.",
         "minPrice" : "1500"

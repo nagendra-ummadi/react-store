@@ -28,11 +28,16 @@ const Menu = () => {
                 <option value="React">React</option>
                 <option value="Django">Django</option>
                 <option value="nodeJS">Node JS</option>
+                <option value="Next.js">Next.JS</option>
+                <option value="VueJS">Vue.js</option>
                 <option value="sql">SQL</option>
+                <option value="Postgres">Postgres</option>
                 <option value="Linux">Linux</option>
                 <option value="DevOps">DevOps</option>
                 <option value= "Docker">Docker</option>
                 <option value="BASH">BASH</option>
+                <option value="Apache Kafka">Apache Kafka</option>
+                
                 
             </select>
         </div>

@@ -19,7 +19,7 @@
     "title": "Tech Quiz",
     "imageSrc": "projects/quiz.png",
     "description": "A responsive React-based Tech Quiz application where users can select categories, answer questions, and view their scores. It features intuitive navigation and real-time answer validation for an engaging experience.",
-    "skills": ["React", "Firebase", "Routing"],
+    "skills": ["React", "Firebase", "Routing","Axios"],
     "demo": "https://ultimate-tech-quiz-app.netlify.app/",
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/quiz-app"
   },
@@ -27,16 +27,16 @@
     "title": "To do",
     "imageSrc": "projects/todo.jpg",
     "description": "Built a dynamic Todo application using React.js, enabling users to add, delete, and update tasks with a seamless user interface and real-time state management. ",
-    "skills": ["React", "Bootstrap"],
+    "skills": ["React", "MongoDB"],
     "demo": "https://nag-todo.netlify.app/",
-    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/todo-list"
+    "source": "https://github.com/nagendra-ummadi/react-store/tree/main/todo-app"
   },
   {
     "title": "Redesign of Kingsukh Guest House",
     "imageSrc": "projects/guest_house.png",
     "description": "The new design enhances navigation and accessibility, making room details and bookings easier to find. A consistent color scheme and engaging visuals create a welcoming online presence.",
     "skills": ["React", "Semantic UI"],
-    "demo": "https://app.netlify.com/sites/redesign-kingsukh-guest-house/overview",
+    "demo": "https://redesign-kingsukh-guest-house.netlify.app",
     "source": "https://github.com/nagendra-ummadi/react-store/tree/main/kingsukh-redesign"
   }
 ]

@@ -11,6 +11,8 @@ function Hero(){
     const [titleIndex, setTitleIndex] = useState(0)
     const [isAnimating, setIsAnimating] = useState(false)
 
+    
+
     useEffect(() => {
         const interval = setInterval(() => {
             setIsAnimating(true); // Start animation
