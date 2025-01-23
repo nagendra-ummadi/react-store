@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Call Centre trends",
+        "imageSrc": "projects/call_centre_trends.png",
+        "description": "Developed a Call Centre Trends Dashboard in Power BI to track call volume, resolution rates, and agent performance, enabling data-driven decision-making.",
+        "skills": ["PowerBI"],
+        "source": "https://github.com/nagendra-ummadi/powerbi/blob/main/pwc_workshop/Call%20Center%20Trends.pbix"
+      },
+      {
+        "title": "Diversity and Inclusion",
+        "imageSrc": "projects/diversity.jpg",
+        "description": "Created a Diversity and Inclusion Dashboard in Power BI to visualize workforce demographics, monitor inclusion metrics, and support equity initiatives.",
+        "skills": ["PowerBI"],
+        "source": "https://github.com/nagendra-ummadi/powerbi/blob/main/pwc_workshop/DiversityAndInclusion.pbix"
+      }
+]

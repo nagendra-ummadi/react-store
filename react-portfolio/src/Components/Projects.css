@@ -15,6 +15,14 @@
     font-weight: bold;
 }
 
+.categories{
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    align-items: center;
+    margin-top: 30px;
+}
+
 .projects{
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +36,7 @@
     flex-direction: column;
     text-wrap: wrap;
     width: 350px;
-    height: 450px;
+    height: max-content;
     border-radius: 15px;
     margin-top: 40px;
     background-image: linear-gradient(90deg,rgba(0, 6, 0, 0.3), 120%,rgba(255,255,255,0) 30%);
@@ -77,7 +85,6 @@
 .project-output-buttons{
     display: flex;
     align-items: center;
-    position: absolute;
     bottom: 10px;
     list-style: none;
     /* transform: translate(-30px,0); */
@@ -91,8 +98,13 @@
     border-radius: 20px;
     font-size: small;
     color: white;
-    background-color: rgba(0,255,255,0.2);;
+    /* background-color: rgba(0,255,255,0.2); */
     transition: background-color 0.4s;
+}
+.btn.dashboard{
+    width: 100%;
+    padding: 10px 50px;
+    /* background-color: #C82333; */
 }
 .project-output-button li a:hover{
     background-color: rgba(0,255,255,0.5);
@@ -131,6 +143,17 @@
     }
     .title-description{
         font-size: small;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .categories{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .categories .btn{
         width: 100%;
     }
 }
