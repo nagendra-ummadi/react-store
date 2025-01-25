@@ -2,43 +2,43 @@
     
     {
         "id": "1",
-        "imagePath" : "/assets/ayodhya.webp"
+        "imagePath" : "/images/ayodhya.webp"
     },
     {
         "id": "2",
-        "imagePath" : "/assets/baranti.webp"
+        "imagePath" : "/images/baranti.webp"
     },
     {
         "id": "3",
-        "imagePath" : "/assets/flower.jpg"
+        "imagePath" : "/images/flower.jpg"
     },
     {
         "id": "4",
-        "imagePath" : "/assets/small.jpg"
+        "imagePath" : "/images/small.jpg"
     },
     {
         "id": "5",
-        "imagePath" : "/assets/large.jpg"
+        "imagePath" : "/images/large.jpg"
     },
     {
         "id":6,
-        "imagePath": "/assets/mithonDam.webp"
+        "imagePath": "/images/mithonDam.webp"
     },
     {
         "id":7,
-        "imagePath": "/assets/room1.jpg"
+        "imagePath": "/images/room1.jpg"
     },
     {
         "id":8,
-        "imagePath": "/assets/palash.webp"
+        "imagePath": "/images/palash.webp"
     },
     {
         "id": 9,
-        "imagePath": "/assets/out.jpg"
+        "imagePath": "/images/out.jpg"
     },
     {
         "id":10,
-        "imagePath": "/assets/recep.jpg"
+        "imagePath": "/images/recep.jpg"
     }
 
 ]

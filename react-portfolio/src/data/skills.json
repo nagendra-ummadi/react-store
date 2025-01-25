@@ -40,6 +40,11 @@
     "imageSrc": "/skills/figma.png"
   },
   {
+    "title": "Git",
+    "imageSrc": "/skills/git.png"
+
+  },
+  {
     "title": "Python",
     "imageSrc": "/skills/python.png"
   },
