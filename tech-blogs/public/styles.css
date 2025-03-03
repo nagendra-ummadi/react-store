@@ -6,8 +6,8 @@ body {
     padding: 0 20px;
     font-family: 'Noto Serif', serif;
     max-width: 1200px;
-    background-color: #121212;
-    color: #fff
+    /* background-color: #121212;
+    color: #fff */
 }
 
 p,
@@ -19,7 +19,7 @@ ul {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #fff;
+    /* color: #fff; */
 }
 
 /* nav & footer styles */
